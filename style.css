@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+   
    
     
 }
@@ -30,6 +32,36 @@ header{
     background-color: rgb(54, 70, 65);
     color: aliceblue;
 }
+.cld{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:300px;
+    overflow: visible;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 80%;
+}
+
+.cld img{
+  position: absolute;
+  will-change: transform;
+}
+.cld4 {
+    position: absolute;
+    left: 30vw;
+    top: 20vw;
+}
+.cld2{
+    position: absolute;
+    left: 50vw;
+    top: 20vw;
+}
+.cld1{
+    position: absolute;
+    right: 30vw;
+   top:-20vw;
+}
 main{
     background-image: url("./img/pic1.jpg");
     height:120vh;
@@ -44,6 +76,7 @@ main h1{
     font-size: 5rem;
     color: rgb(0, 0, 0);
     mix-blend-mode: overlay;
+    z-index: 4;
 }
 .name{
     font-size: 3rem;
